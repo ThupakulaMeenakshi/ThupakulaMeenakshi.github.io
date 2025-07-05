@@ -1,48 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meenakshi's Portfolio</title>
     <style>
-  body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-  }
-  h1 { color: #2a3f5f; }
-  .project {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 20px 0;
-  }
-  a { 
-    color: #1a73e8;
-    text-decoration: none;
-  }
-  a:hover { text-decoration: underline; }
-</style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { 
+            color: #2a3f5f; 
+            margin-bottom: 10px;
+        }
+        .project {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .resume-section {
+            margin: 30px 0;
+        }
+        embed {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+        .btn-linkedin {
+            background: #0077b5;
+        }
+        .btn-linkedin:hover {
+            background: #00669c;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi, I'm Meenakshi! 👋</h1>
-    <p>Data Science & Machine Learning Enthusiast</p>
-    
-    <div class="project">
-  <h2>🛠️ Technical Skills</h2>
-  <p>Python | Machine Learning | Pandas | SQL</p>
-</div>
+    <header>
+        <h1>Hi, I'm Meenakshi! 👋</h1>
+        <p>Data Science & AI/ML Enthusiast | Python Developer | IT Student</p>
+    </header>
 
-<div class="project">
-  <h2>📚 Education</h2>
-  <p>IT Student at AUS</p>
-</div>
-    
-    <!-- Add more projects later -->
-    <p>🔗 <a href="THUPAKULA_MEENAKSHI_RESUME.pdf" target="_blank" 
-   style="display: inline-block; background: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; margin: 10px 0;">
-   📄 Download My Resume
-</a>
-    </p>
+    <div class="project">
+        <h2>🛠️ Technical Skills</h2>
+        <p>Python | Machine Learning | Pandas | NumPy | SQL | Data Analysis</p>
+    </div>
+
+    <div class="project">
+        <h2>📚 Education</h2>
+        <p>Bachelor of Technology in Information Technology</p>
+        <p>Aditya University, Rajahmundry</p>
+    </div>
+
+    <div class="resume-section">
+        <h2>📄 My Resume</h2>
+        <embed src="THUPAKULA_MEENAKSHI_RESUME.pdf" width="100%" height="600px" type="application/pdf">
+        <p style="margin-top: 10px;">
+            <a href="THUPAKULA_MEENAKSHI_RESUME.pdf" class="btn" download>Download Resume (PDF)</a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h2>🌐 Connect With Me</h2>
+        <p>
+            <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn btn-linkedin" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+    </div>
 </body>
 </html>
