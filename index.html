@@ -7,122 +7,75 @@
   <meta name="keywords" content="Meenakshi Thupakula, Portfolio, Python Developer, Machine Learning, Data Science, AI" />
   <meta name="author" content="Meenakshi Thupakula" />
   <title>Meenakshi's Portfolio</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      line-height: 1.6;
+      background: #f5f5f5;
       color: #333;
-      background-color: #f5f5f5;
     }
 
     h1 {
       color: #2a3f5f;
-      margin-bottom: 10px;
     }
 
     .project {
-      background: #f8f9fa;
+      background: #ffffff;
       padding: 20px;
       border-radius: 8px;
       margin: 25px 0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .resume-section {
-      margin: 30px 0;
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn-view {
+      background: #2196f3;
+    }
+
+    .btn-view:hover {
+      background: #1976d2;
     }
 
     .btn-download {
-      background: #4caf50;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
-      display: inline-block;
-      margin: 15px 0 20px 0;
-      text-decoration: none;
-      transition: all 0.3s ease;
+      background: #ff9800;
     }
 
     .btn-download:hover {
-      background: #45a049;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #f57c00;
     }
 
     .btn-linkedin {
       background: #0077b5;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
+      margin: 5px;
     }
 
     .btn-linkedin:hover {
-      background: #00669c;
-      transform: translateY(-2px);
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 100;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-content {
-      max-width: 90%;
-      max-height: 90%;
-      border: 3px solid white;
-      box-shadow: 0 0 10px #fff;
-    }
-
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: white;
-      font-size: 35px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .certificate-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 0 10px;
-      border-radius: 5px;
-      color: white;
-      text-decoration: none;
-    }
-
-    .btn-view {
-      background: #2196F3;
-    }
-
-    .btn-download-cert {
-      background: #FF9800;
+      background: #005f91;
     }
 
     @media (max-width: 600px) {
-      .project {
-        padding: 15px;
+      .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Hi, I'm Meenakshi! 👋</h1>
     <p>Data Science & AI/ML Enthusiast | Python Developer | IT Student</p>
@@ -139,34 +92,30 @@
     <p>Aditya University, Surampalem (Affiliated with JNTUK)</p>
   </div>
 
-  <!-- Internship Certificate Section -->
- <!-- Thumbnail + View/Download PDF -->
-<div class="project">
-  <h2>🏆 Internship Certificate</h2>
-  <p>Successfully completed internship at <strong>MSSquare Technologies</strong></p>
-  <p><small>Click image to enlarge</small></p>
+  <!-- 🏆 Internship Certificate (PDF-based) -->
+  <div class="project">
+    <h2>🏆 Internship Certificate</h2>
+    <p>
+      Successfully completed internship at <strong>MSSquare Technologies</strong> as a 
+      Data Science Intern (June 2024 – August 2024).
+    </p>
+    <p><small>You can view or download the certificate below:</small></p>
 
-  <!-- Image preview -->
-  <div style="text-align: center;">
-    <img src="internship_certificate.jpg" 
-         alt="Internship Certificate" 
-         style="max-width: 300px; border: 1px solid #ccc; cursor: pointer;" 
-         onclick="window.open('thupakula_meenakshi.pdf', '_blank')" />
-  </div>
+    <div style="text-align: center;">
+      <!-- View Certificate -->
+      <a href="thupakula_meenakshi.pdf" 
+         target="_blank" 
+         class="btn btn-view">
+         🔍 View Certificate (PDF)
+      </a>
 
-  <!-- Buttons -->
-  <div style="text-align: center;">
-    <button class="certificate-btn btn-view" onclick="window.open('thupakula_meenakshi.pdf', '_blank')">
-      🔍 View Certificate (PDF)
-    </button>
-    <a href="thupakula_meenakshi.pdf" 
-       download 
-       class="certificate-btn btn-download-cert">
-       📥 Download PDF
-    </a>
-  </div>
-</div>
-
+      <!-- Download Certificate -->
+      <a href="thupakula_meenakshi.pdf" 
+         download="Meenakshi_Internship_Certificate.pdf" 
+         class="btn btn-download">
+         📥 Download Certificate
+      </a>
+    </div>
 
     <div style="margin-top: 25px;">
       <h3>Skills Developed:</h3>
@@ -190,56 +139,25 @@
     </ul>
   </div>
 
-  <div class="resume-section">
-    <h2>📄 My Resume</h2>
-    <a href="resume.pdf" download="resume.pdf" class="btn-download">📥 Download Resume (PDF)</a>
+  <div class="project">
+    <h2>📄 Resume</h2>
+    <a href="resume.pdf" 
+       download="Meenakshi_Resume.pdf" 
+       class="btn btn-download">
+       📥 Download Resume
+    </a>
   </div>
 
   <div class="project">
     <h2>🌐 Connect With Me</h2>
-    <p>
-      <a href="https://github.com/ThupakulaMeenakshi" class="btn-linkedin" style="background: #333;" target="_blank">
-        GitHub Profile
-      </a>
-      <a href="https://ThupakulaMeenakshi.github.io" class="btn-linkedin" style="background: #6a1b9a;" target="_blank">
-        My Portfolio
-      </a>
-    </p>
-    <p>
-      <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn-linkedin" target="_blank">
-        LinkedIn Profile
-      </a>
-    </p>
-  </div>
-
-  <!-- Certificate Modal -->
-  <div id="certificateModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage" src="internship_certificate.jpg" alt="Full Certificate">
+    <a href="https://github.com/ThupakulaMeenakshi" class="btn btn-linkedin" target="_blank">GitHub</a>
+    <a href="https://ThupakulaMeenakshi.github.io" class="btn btn-linkedin" style="background:#6a1b9a;" target="_blank">My Portfolio</a>
+    <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn btn-linkedin" target="_blank">LinkedIn</a>
   </div>
 
   <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
     © 2025 Meenakshi Thupakula | All rights reserved.
   </footer>
 
-  <script>
-    const modal = document.getElementById("certificateModal");
-    const modalImg = document.getElementById("modalImage");
-
-    function openModal() {
-      modal.style.display = "flex"; // Use flex for centering
-    }
-
-    function closeModal() {
-      modal.style.display = "none";
-    }
-
-    // Only close if background is clicked (not the image itself)
-    modal.addEventListener('click', function (event) {
-      if (event.target === modal || event.target.className === "close") {
-        closeModal();
-      }
-    });
-  </script>
 </body>
 </html>
