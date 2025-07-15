@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Meenakshi Thupakula - Data Science & AI/ML Enthusiast, Python Developer, IT Student." />
+  <meta name="keywords" content="Meenakshi Thupakula, Portfolio, Python Developer, Machine Learning, Data Science, AI" />
+  <meta name="author" content="Meenakshi Thupakula" />
   <title>Meenakshi's Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    /* Existing CSS (keep your current styles) */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
@@ -14,31 +17,57 @@
       line-height: 1.6;
       color: #333;
     }
-    
-    /* Add these new styles for the certificate section */
-    .certificate-container {
+
+    h1 {
+      color: #2a3f5f;
+      margin-bottom: 10px;
+    }
+
+    .project {
       background: #f8f9fa;
       padding: 20px;
       border-radius: 8px;
       margin: 25px 0;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center;
     }
-    
-    .certificate-preview {
-      width: 200px;
-      border: 2px solid #2a3f5f;
+
+    .resume-section {
+      margin: 30px 0;
+    }
+
+    .btn-download {
+      background: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 15px 0 20px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-linkedin {
+      background: #0077b5;
+      color: white;
+      padding: 10px 20px;
       border-radius: 5px;
-      cursor: pointer;
-      transition: transform 0.3s;
-      margin: 15px auto;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
-    
-    .certificate-preview:hover {
-      transform: scale(1.05);
+
+    .btn-linkedin:hover {
+      background: #00669c;
+      transform: translateY(-2px);
     }
-    
-    /* Modal styles for certificate popup */
+
+    /* Modal Styles */
     .modal {
       display: none;
       position: fixed;
@@ -48,17 +77,16 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0,0,0,0.9);
-      overflow: auto;
     }
-    
+
     .modal-content {
-      margin: auto;
       display: block;
+      margin: 5% auto;
       max-width: 90%;
       max-height: 90%;
-      margin-top: 50px;
+      border: 3px solid white;
     }
-    
+
     .close {
       position: absolute;
       top: 20px;
@@ -68,91 +96,132 @@
       font-weight: bold;
       cursor: pointer;
     }
-    
-    .certificate-btn {
-      background: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 10px 5px;
-      transition: all 0.3s;
-    }
-    
-    .certificate-btn:hover {
-      background: #45a049;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .btn-view {
-      background: #2196F3;
-    }
-    
-    .btn-view:hover {
-      background: #0b7dda;
-    }
-    
-    .btn-download {
-      background: #FF9800;
-    }
-    
-    .btn-download:hover {
-      background: #e68a00;
+
+    @media (max-width: 600px) {
+      .project {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Hi, I'm Meenakshi! 👋</h1>
+    <p>Data Science & AI/ML Enthusiast | Python Developer | IT Student</p>
+  </header>
 
-  <!-- Add this certificate section where you want it to appear -->
-  <div class="certificate-container">
+  <div class="project">
+    <h2>🛠️ Technical Skills</h2>
+    <p>Python | Machine Learning | Pandas | NumPy | SQL | Data Analysis</p>
+  </div>
+
+  <div class="project">
+    <h2>📚 Education</h2>
+    <p>Bachelor of Technology in Information Technology</p>
+    <p>Aditya University, Surampalem (Affiliated with JNTUK)</p>
+  </div>
+
+  <div class="project">
     <h2>🏆 Internship Certification</h2>
-    <p>Successfully completed my internship at <strong>XYZ Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
+    <p>Completed internship at <strong>[Company Name]</strong> (Month 2024)</p>
     
-    <!-- Certificate Preview (click to open modal) -->
-    <img src="certificates/internship_preview.jpg" alt="Internship Certificate Preview" class="certificate-preview" onclick="openModal()">
-    
-    <!-- Action Buttons -->
-    <div>
-      <a href="#" class="certificate-btn btn-view" onclick="openModal()">🔍 View Certificate</a>
-      <a href="certificates/internship_certificate.pdf" download="Meenakshi_Internship_Certificate.pdf" class="certificate-btn btn-download">📥 Download PDF</a>
+    <!-- Preview Image -->
+    <div style="text-align: center; margin: 15px 0;">
+      <img src="certificates/internship_preview.jpg" 
+           alt="Internship Certificate" 
+           style="width: 200px; border: 2px solid #2a3f5f; border-radius: 5px; cursor: pointer;"
+           onclick="openModal()">
     </div>
-    
+
+    <!-- Action Buttons -->
+    <div style="text-align: center;">
+      <a href="InternCertification.pdf" 
+         download="Meenakshi_Internship_Certificate.pdf"
+         class="btn-download" 
+         style="background: #FF9800; margin-right: 10px;">
+         📥 Download PDF
+      </a>
+      <button class="btn-download" 
+              style="background: #2196F3;"
+              onclick="openModal()">
+         🔍 View Fullscreen
+      </button>
+    </div>
+
     <!-- Skills Gained -->
-    <div style="margin-top: 20px; text-align: left;">
+    <div style="margin-top: 20px;">
       <h3>Skills Developed:</h3>
       <ul>
         <li>Machine Learning model development</li>
         <li>Data cleaning and preprocessing</li>
         <li>Python programming for data analysis</li>
-        <li>Team collaboration and project management</li>
       </ul>
     </div>
   </div>
 
-  <!-- The Modal -->
-  <div id="certificateModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalCertificate" src="certificates/internship_certificate.jpg" alt="Full Internship Certificate">
+  <div class="project">
+    <h2>🎓 Certifications</h2>
+    <ul>
+      <li>IBM Machine Learning with Python – IBM</li>
+      <li>Introduction to Artificial Intelligence – HP Life</li>
+      <li>Oracle SQL Database Management – SkillDZire</li>
+      <li>Python and MySQL Training – Spoken Tutorial (IIT Bombay)</li>
+      <li>PHP & MySQL Basics – IBM</li>
+    </ul>
   </div>
 
+  <div class="resume-section">
+    <h2>📄 My Resume</h2>
+    <a href="resume.pdf" 
+       download="resume.pdf" 
+       class="btn-download">
+       📥 Download Resume (PDF)
+    </a>
+  </div>
+
+  <div class="project">
+    <h2>🌐 Connect With Me</h2>
+    <p>
+      <a href="https://github.com/ThupakulaMeenakshi" class="btn-linkedin" style="background: #333;" target="_blank">
+        GitHub Profile
+      </a>
+      <a href="https://ThupakulaMeenakshi.github.io" class="btn-linkedin" style="background: #6a1b9a;" target="_blank">
+        My Portfolio
+      </a>
+    </p>
+    <p>
+      <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn-linkedin" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="certModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalCert" src="certificates/internship_certificate.jpg">
+  </div>
+
+  <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
+    © 2025 Meenakshi Thupakula | All rights reserved.
+  </footer>
+
   <script>
-    // Modal functions
+    // Modal Functions
     function openModal() {
-      document.getElementById('certificateModal').style.display = "block";
+      document.getElementById('certModal').style.display = 'block';
     }
-    
+
     function closeModal() {
-      document.getElementById('certificateModal').style.display = "none";
+      document.getElementById('certModal').style.display = 'none';
     }
-    
-    // Close when clicking outside the image
+
+    // Close when clicking outside image
     window.onclick = function(event) {
-      if (event.target == document.getElementById('certificateModal')) {
+      if (event.target == document.getElementById('certModal')) {
         closeModal();
       }
     }
   </script>
-
 </body>
 </html>
