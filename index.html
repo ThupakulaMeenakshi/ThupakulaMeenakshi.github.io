@@ -7,67 +7,74 @@
   <meta name="keywords" content="Meenakshi Thupakula, Portfolio, Python Developer, Machine Learning, Data Science, AI" />
   <meta name="author" content="Meenakshi Thupakula" />
   <title>Meenakshi's Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      background: #f5f5f5;
+      line-height: 1.6;
       color: #333;
     }
 
     h1 {
       color: #2a3f5f;
+      margin-bottom: 10px;
     }
 
     .project {
-      background: #ffffff;
+      background: #f8f9fa;
       padding: 20px;
       border-radius: 8px;
       margin: 25px 0;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 600;
-      color: white;
-      transition: background 0.3s;
+    .resume-section {
+      margin: 30px 0;
     }
 
     .btn-download {
-      background: #ff9800;
+      background: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 15px 0 20px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
     .btn-download:hover {
-      background: #f57c00;
+      background: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .btn-linkedin {
       background: #0077b5;
-      margin: 5px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
     }
 
     .btn-linkedin:hover {
-      background: #005f91;
+      background: #00669c;
+      transform: translateY(-2px);
     }
 
     @media (max-width: 600px) {
-      .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
+      .project {
+        padding: 15px;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Hi, I'm Meenakshi! 👋</h1>
     <p>Data Science & AI/ML Enthusiast | Python Developer | IT Student</p>
@@ -84,23 +91,21 @@
     <p>Aditya University, Surampalem (Affiliated with JNTUK)</p>
   </div>
 
-  <!-- 🏆 Internship Certificate (Download Only) -->
+  <!-- Internship Certificate Section (Download Only) -->
   <div class="project">
-    <h2>🏆 Internship Certificate</h2>
-    <p>
-      Successfully completed internship at <strong>MSSquare Technologies</strong> as a 
-      Data Science Intern (June 2024 – August 2024).
-    </p>
-
-    <div style="text-align: center;">
-      <!-- Only Download Button -->
+    <h2>🏆 Internship Certification</h2>
+    <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
+    
+    <!-- Download Button Only -->
+    <div style="text-align: center; margin: 20px 0;">
       <a href="thupakula_meenakshi.pdf" 
-         download="Meenakshi_Internship_Certificate.pdf" 
-         class="btn btn-download">
-         📥 Download Internship Certificate (PDF)
+         download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
+         class="certificate-btn btn-download-cert">
+        📥 Download Certificate (PDF)
       </a>
     </div>
-
+    
+    <!-- Skills Developed -->
     <div style="margin-top: 25px;">
       <h3>Skills Developed:</h3>
       <ul>
@@ -123,25 +128,34 @@
     </ul>
   </div>
 
-  <div class="project">
-    <h2>📄 Resume</h2>
+  <div class="resume-section">
+    <h2>📄 My Resume</h2>
     <a href="resume.pdf" 
-       download="Meenakshi_Resume.pdf" 
-       class="btn btn-download">
-       📥 Download Resume
+       download="resume.pdf" 
+       class="btn-download">
+       📥 Download Resume (PDF)
     </a>
   </div>
 
   <div class="project">
     <h2>🌐 Connect With Me</h2>
-    <a href="https://github.com/ThupakulaMeenakshi" class="btn btn-linkedin" target="_blank">GitHub</a>
-    <a href="https://ThupakulaMeenakshi.github.io" class="btn btn-linkedin" style="background:#6a1b9a;" target="_blank">My Portfolio</a>
-    <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn btn-linkedin" target="_blank">LinkedIn</a>
+    <p>
+      <a href="https://github.com/ThupakulaMeenakshi" class="btn-linkedin" style="background: #333;" target="_blank">
+        GitHub Profile
+      </a>
+      <a href="https://ThupakulaMeenakshi.github.io" class="btn-linkedin" style="background: #6a1b9a;" target="_blank">
+        My Portfolio
+      </a>
+    </p>
+    <p>
+      <a href="https://linkedin.com/in/meenakshi-thupakula-98219326b" class="btn-linkedin" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
   </div>
 
   <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
     © 2025 Meenakshi Thupakula | All rights reserved.
   </footer>
-
 </body>
 </html>
