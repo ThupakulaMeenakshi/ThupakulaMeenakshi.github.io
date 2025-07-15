@@ -67,7 +67,7 @@
       transform: translateY(-2px);
     }
 
-    /* Modal Styles */
+    /* Certificate Modal Styles */
     .modal {
       display: none;
       position: fixed;
@@ -97,6 +97,23 @@
       cursor: pointer;
     }
 
+    .certificate-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-view {
+      background: #2196F3;
+    }
+
+    .btn-download-cert {
+      background: #FF9800;
+    }
+
     @media (max-width: 600px) {
       .project {
         padding: 15px;
@@ -121,40 +138,39 @@
     <p>Aditya University, Surampalem (Affiliated with JNTUK)</p>
   </div>
 
+  <!-- Internship Certificate Section -->
   <div class="project">
     <h2>🏆 Internship Certification</h2>
-    <p>Completed internship at <strong>[Company Name]</strong> (Month 2024)</p>
+    <p>Successfully completed my internship at <strong>XYZ Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
     
-    <!-- Preview Image -->
-    <div style="text-align: center; margin: 15px 0;">
+    <!-- Certificate Preview -->
+    <div style="text-align: center; margin: 20px 0;">
       <img src="certificates/internship_preview.jpg" 
-           alt="Internship Certificate" 
-           style="width: 200px; border: 2px solid #2a3f5f; border-radius: 5px; cursor: pointer;"
+           alt="Internship Certificate Preview" 
+           style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
            onclick="openModal()">
     </div>
-
+    
     <!-- Action Buttons -->
     <div style="text-align: center;">
-      <a href="InternCertification.pdf" 
-         download="Meenakshi_Internship_Certificate.pdf"
-         class="btn-download" 
-         style="background: #FF9800; margin-right: 10px;">
-         📥 Download PDF
+      <a class="certificate-btn btn-view" onclick="openModal()">
+        🔍 View Certificate
       </a>
-      <button class="btn-download" 
-              style="background: #2196F3;"
-              onclick="openModal()">
-         🔍 View Fullscreen
-      </button>
+      <a href="InternCertification.pdf" 
+         download="Meenakshi_XYZ_Internship_Certificate.pdf"
+         class="certificate-btn btn-download-cert">
+        📥 Download PDF
+      </a>
     </div>
-
-    <!-- Skills Gained -->
-    <div style="margin-top: 20px;">
+    
+    <!-- Skills Developed -->
+    <div style="margin-top: 25px;">
       <h3>Skills Developed:</h3>
       <ul>
         <li>Machine Learning model development</li>
         <li>Data cleaning and preprocessing</li>
         <li>Python programming for data analysis</li>
+        <li>Team collaboration and project management</li>
       </ul>
     </div>
   </div>
@@ -196,10 +212,10 @@
     </p>
   </div>
 
-  <!-- Modal Popup -->
-  <div id="certModal" class="modal">
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalCert" src="certificates/internship_certificate.jpg">
+    <img class="modal-content" id="certificateImage" src="certificates/internship_certificate.jpg">
   </div>
 
   <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
@@ -208,17 +224,20 @@
 
   <script>
     // Modal Functions
+    const modal = document.getElementById("certificateModal");
+    const modalImg = document.getElementById("certificateImage");
+    
     function openModal() {
-      document.getElementById('certModal').style.display = 'block';
+      modal.style.display = "block";
     }
-
+    
     function closeModal() {
-      document.getElementById('certModal').style.display = 'none';
+      modal.style.display = "none";
     }
-
-    // Close when clicking outside image
+    
+    // Close when clicking outside the image
     window.onclick = function(event) {
-      if (event.target == document.getElementById('certModal')) {
+      if (event.target == modal) {
         closeModal();
       }
     }
