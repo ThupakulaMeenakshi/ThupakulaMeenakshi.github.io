@@ -140,24 +140,33 @@
   </div>
 
   <!-- Internship Certificate Section -->
-  <div class="project">
-    <h2>🏆 Internship Certification</h2>
-    <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
-    <p><small>Click image to enlarge</small></p>
-    <div style="text-align: center; margin: 20px 0;">
-      <img src="internship_certificate.jpg" 
-           alt="Internship Certificate Preview" 
-           style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
-           onclick="openModal()">
-    </div>
-    <div style="text-align: center;">
-      <button class="certificate-btn btn-view" onclick="openModal()">🔍 View Certificate</button>
-      <a href="thupakula_meenakshi.pdf" 
-         download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
-         class="certificate-btn btn-download-cert">
-         📥 Download PDF
-      </a>
-    </div>
+ <!-- Thumbnail + View/Download PDF -->
+<div class="project">
+  <h2>🏆 Internship Certificate</h2>
+  <p>Successfully completed internship at <strong>MSSquare Technologies</strong></p>
+  <p><small>Click image to enlarge</small></p>
+
+  <!-- Image preview -->
+  <div style="text-align: center;">
+    <img src="internship_certificate.jpg" 
+         alt="Internship Certificate" 
+         style="max-width: 300px; border: 1px solid #ccc; cursor: pointer;" 
+         onclick="window.open('thupakula_meenakshi.pdf', '_blank')" />
+  </div>
+
+  <!-- Buttons -->
+  <div style="text-align: center;">
+    <button class="certificate-btn btn-view" onclick="window.open('thupakula_meenakshi.pdf', '_blank')">
+      🔍 View Certificate (PDF)
+    </button>
+    <a href="thupakula_meenakshi.pdf" 
+       download 
+       class="certificate-btn btn-download-cert">
+       📥 Download PDF
+    </a>
+  </div>
+</div>
+
 
     <div style="margin-top: 25px;">
       <h3>Skills Developed:</h3>
