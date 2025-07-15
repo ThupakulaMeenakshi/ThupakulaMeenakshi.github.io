@@ -67,7 +67,6 @@
       transform: translateY(-2px);
     }
 
-    /* Certificate Modal Styles */
     .modal {
       display: none;
       position: fixed;
@@ -76,7 +75,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.9);
+      background-color: rgba(0, 0, 0, 0.9);
     }
 
     .modal-content {
@@ -139,81 +138,25 @@
   </div>
 
   <!-- Internship Certificate Section -->
-  <!-- Internship Certificate Section -->
-<div class="project">
-  <h2>🏆 Internship Certification</h2>
-  <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
-  
-  <!-- Certificate Preview -->
+  <div class="project">
+    <h2>🏆 Internship Certification</h2>
+    <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
     <p><small>Click image to enlarge</small></p>
     <div style="text-align: center; margin: 20px 0;">
-  <img src="internship_certificate.jpg" 
-       alt="Internship Certificate Preview" 
-       style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
-       onclick="openModal()">
-</div>
-  </div>
-  
-  <!-- Action Buttons -->
-  <div style="text-align: center;">
-    <button class="certificate-btn btn-view" onclick="openModal()">
-      🔍 View Certificate
-    </button>
-    <a href="thupakula_meenakshi.pdf" 
-       download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
-       class="certificate-btn btn-download-cert">
-      📥 Download PDF
-    </a>
-  </div>
-</div>
+      <img src="internship_certificate.jpg" 
+           alt="Internship Certificate Preview" 
+           style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
+           onclick="openModal()">
+    </div>
+    <div style="text-align: center;">
+      <button class="certificate-btn btn-view" onclick="openModal()">🔍 View Certificate</button>
+      <a href="thupakula_meenakshi.pdf" 
+         download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
+         class="certificate-btn btn-download-cert">
+         📥 Download PDF
+      </a>
+    </div>
 
-<!-- Certificate Modal -->
-<div id="certificateModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage" src="internship_certificate.jpg">
-</div>
-
-<script>
-// Modal Functions
-const modal = document.getElementById("certificateModal");
-const modalImg = document.getElementById("modalImage");
-    
-function openModal() {
-  modal.style.display = "block";
-}
-    
-function closeModal() {
-  modal.style.display = "none";
-}
-    
-// Close when clicking outside the image
-window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-}
-</script>
-  
-  <!-- Skills Developed -->
-  <div style="margin-top: 25px;">
-    <h3>Skills Developed:</h3>
-    <ul>
-      <li>Machine Learning model development</li>
-      <li>Data cleaning and preprocessing</li>
-      <li>Python programming for data analysis</li>
-      <li>Team collaboration and project management</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Certificate Modal -->
-<div id="certificateModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="certificateImage" 
-       src="https://thupakulameenakshi.github.io/internship_certificate.jpg">
-</div>
-    
-    <!-- Skills Developed -->
     <div style="margin-top: 25px;">
       <h3>Skills Developed:</h3>
       <ul>
@@ -238,11 +181,7 @@ window.onclick = function(event) {
 
   <div class="resume-section">
     <h2>📄 My Resume</h2>
-    <a href="resume.pdf" 
-       download="resume.pdf" 
-       class="btn-download">
-       📥 Download Resume (PDF)
-    </a>
+    <a href="resume.pdf" download="resume.pdf" class="btn-download">📥 Download Resume (PDF)</a>
   </div>
 
   <div class="project">
@@ -264,34 +203,31 @@ window.onclick = function(event) {
 
   <!-- Certificate Modal -->
   <div id="certificateModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage" src="internship_certificate.jpg" alt="Full Certificate">
+  </div>
+
   <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
     © 2025 Meenakshi Thupakula | All rights reserved.
   </footer>
 
   <script>
-// Fixed JavaScript - no typos
-const modal = document.getElementById("certificateModal");
-const modalImg = document.getElementById("modalImage");
-    
-function openModal() {
-  modal.style.display = "block";
-  // Set the modal image source when opening
-  modalImg.src = "internship_certificate.jpg";
-}
-    
-function closeModal() {
-  modal.style.display = "none";
-}
-    
-// Close when clicking outside the image
-window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-}
-</script>
+    const modal = document.getElementById("certificateModal");
+    const modalImg = document.getElementById("modalImage");
+
+    function openModal() {
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
