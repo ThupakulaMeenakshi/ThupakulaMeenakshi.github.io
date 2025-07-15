@@ -140,26 +140,47 @@
 
   <!-- Internship Certificate Section -->
   <div class="project">
-    <h2>🏆 Internship Certification</h2>
-    <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
-    
-    <!-- Certificate Preview -->
-<img src="internship_certificate.jpg" 
-     alt="Internship Certificate Preview" 
-     style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
-     onclick="openModal()">
+  <h2>🏆 Internship Certification</h2>
+  <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
+  
+  <!-- Certificate Preview -->
+  <div style="text-align: center; margin: 20px 0;">
+    <img src="https://thupakulameenakshi.github.io/internship_certificate.jpg" 
+         alt="Internship Certificate Preview" 
+         style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
+         onclick="openModal()">
+  </div>
+  
+  <!-- Action Buttons -->
+  <div style="text-align: center;">
+    <a class="certificate-btn btn-view" onclick="openModal()">
+      🔍 View Certificate
+    </a>
+    <a href="https://thupakulameenakshi.github.io/thupakula_meenakshi.pdf" 
+       download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
+       class="certificate-btn btn-download-cert">
+      📥 Download PDF
+    </a>
+  </div>
+  
+  <!-- Skills Developed -->
+  <div style="margin-top: 25px;">
+    <h3>Skills Developed:</h3>
+    <ul>
+      <li>Machine Learning model development</li>
+      <li>Data cleaning and preprocessing</li>
+      <li>Python programming for data analysis</li>
+      <li>Team collaboration and project management</li>
+    </ul>
+  </div>
+</div>
 
-<!-- PDF Download (line ~94) --> 
-<a href="thupakula_meenakshi.pdf" 
-   download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
-   class="certificate-btn btn-download-cert">
-   📥 Download PDF
-</a>
-
-<!-- Modal Image (line ~144) -->
-<img class="modal-content" id="certificateImage" src="internship_certificate.jpg">
-      </a>
-    </div>
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certificateImage" 
+       src="https://thupakulameenakshi.github.io/internship_certificate.jpg">
+</div>
     
     <!-- Skills Developed -->
     <div style="margin-top: 25px;">
