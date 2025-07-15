@@ -139,29 +139,59 @@
   </div>
 
   <!-- Internship Certificate Section -->
-  <div class="project">
+  <!-- Internship Certificate Section -->
+<div class="project">
   <h2>🏆 Internship Certification</h2>
   <p>Successfully completed my internship at <strong>MSSquare Technologies</strong> as a Data Science Intern (June 2024 - August 2024)</p>
   
   <!-- Certificate Preview -->
   <div style="text-align: center; margin: 20px 0;">
-    <img src="https://thupakulameenakshi.github.io/internship_certificate.jpg" 
+    <img src="internship_certificate.jpg" 
          alt="Internship Certificate Preview" 
          style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
          onclick="openModal()">
+    <p><small>Click image to enlarge</small></p>
   </div>
   
   <!-- Action Buttons -->
   <div style="text-align: center;">
-    <a class="certificate-btn btn-view" onclick="openModal()">
+    <button class="certificate-btn btn-view" onclick="openModal()">
       🔍 View Certificate
-    </a>
-    <a href="https://thupakulameenakshi.github.io/thupakula_meenakshi.pdf" 
+    </button>
+    <a href="thupakula_meenakshi.pdf" 
        download="Meenakshi_MSSquareTech_Internship_Certificate.pdf"
        class="certificate-btn btn-download-cert">
       📥 Download PDF
     </a>
   </div>
+</div>
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" src="internship_certificate.jpg">
+</div>
+
+<script>
+// Modal Functions
+const modal = document.getElementById("certificateModal");
+const modalImg = document.getElementById("modalImage");
+    
+function openModal() {
+  modal.style.display = "block";
+}
+    
+function closeModal() {
+  modal.style.display = "none";
+}
+    
+// Close when clicking outside the image
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+</script>
   
   <!-- Skills Developed -->
   <div style="margin-top: 25px;">
