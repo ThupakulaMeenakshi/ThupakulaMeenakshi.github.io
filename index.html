@@ -151,6 +151,12 @@
          style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
          onclick="openModal()">
     <p><small>Click image to enlarge</small></p>
+    <div style="text-align: center; margin: 20px 0;">
+  <img src="internship_certificate.jpg" 
+       alt="Internship Certificate Preview" 
+       style="max-width: 300px; border: 1px solid #ddd; cursor: pointer;"
+       onclick="openModal()">
+</div>
   </div>
   
   <!-- Action Buttons -->
@@ -263,33 +269,34 @@ window.onclick = function(event) {
 
   <!-- Certificate Modal -->
   <div id="certificateModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="certificateImage" src="certificates/internship_certificate.jpg">
-  </div>
-
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
   <footer style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
     © 2025 Meenakshi Thupakula | All rights reserved.
   </footer>
 
   <script>
-    // Modal Functions
-    const modal = document.getElementById("certificateModal");
-    const modalImg = document.getElementById("certificateImage");
+// Fixed JavaScript - no typos
+const modal = document.getElementById("certificateModal");
+const modalImg = document.getElementById("modalImage");
     
-    function openModal() {
-      modal.style.display = "block";
-    }
+function openModal() {
+  modal.style.display = "block";
+  // Set the modal image source when opening
+  modalImg.src = "internship_certificate.jpg";
+}
     
-    function closeModal() {
-      modal.style.display = "none";
-    }
+function closeModal() {
+  modal.style.display = "none";
+}
     
-    // Close when clicking outside the image
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        closeModal();
-      }
-    }
-  </script>
+// Close when clicking outside the image
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+</script>
 </body>
 </html>
